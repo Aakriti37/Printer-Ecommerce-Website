@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--It provides meta data about html document-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     
+    <!--It provides 'Coursework' as a title to html document-->
+    <title>Coursework</title>
+
+    <!--Connects an external css stylesheet 'blo.css' to apply styles to the html document-->
+    <link rel="stylesheet" href="blo.css">
+    
+
+    <!--Defines internal css for html document-->
+    <style>
+
+        /* This property of css defines a custom font called 'myfont'
+        which allows us to use 'myfont' as a font family in other css styles.
+        */
+        @font-face {
+            font-family: myfont;
+            /* It specifies the source of the font */
+            src: url(Fontstyle/DSB.ttf);
+        }
+        
+        /* Using 'myfont' as a font family to the h1 element */
+        h1 {
+            font-family: myfont;
+        }
+
+        /* Add 'system-ui' as a font-family and a background color
+        named as '#e9e7e7' with some padding to the content inside body tag */
+        body {
+            font-family: system-ui;
+            padding: 20px;
+            background: #e9e7e7;
+        }
+
+    </style> 
+
+</head>
+<body>
+    
+
+    <!--Creating a navigation bar which includes Home, Product, Blog, About Us and Research page
+    including search bar and logo-->
+    <nav class="float-navigation">
+
+        <a href="../Home- Page/home.html">Home</a>
+        <a href="../Product-Page/product.html"> Product </a>
+        <a href="../Blog-Page/blog.html">Blog  </a>
+        <a href="../AboutUs-Page/aboutus.html"> About Us</a>
+        <a href="../Research-Page/research.html">Research </a>
+        
+        <div class="searchbar">
+            <input style="width:300px; border-radius: 7px; height:25px;"type="text" placeholder="Search🔎"> 
+        </div>
+        <a href="../Home- Page/home.html"> <img src="Images/Logo.png" style="height:5%;width:50%;"></a>
+    </nav>
+
+     
+    <!--Creating a header name 'Impact of Technology' for blog page-->
+    <div class="header">
+        <h1>Impact of Technology</h1>
+    </div>
+
+
+    <!--Creating a container with inline css which sets background color named as '#c1e1c1'-->
+    <div class="container" style="background-color: #c1e1c1;">
+        <div class="text">
+
+            <!--Creating a sub-heading named as 'Technology for the page'-->
+            <h2>Technology</h2>
+            <!--Writing content inside <p> tag for sub-heading Technology -->
+            <p>
+                Technology is the application of technical and scientific knowledge to the practical aims of human life
+                to solve problems and make life easier and comfortable. In this modern era, technology is evolving day by day.
+                It has become a part of our modern life.The quick advancement and widespread use of technology has fundamentally 
+                changed how people work, live, communicate, and engage with one another. Athough technology is helping humans in
+                many positive ways but, as we know everything has both merits and demerits. Just like that, technology also has
+                both positive aspects and negative aspects.
+            </p>            
+        </div>
+
+        <!--Inserting image to the container of the page where the sub-heading is 'Technology'-->
+        <div class="img">
+            <img src="Images/Techno.jpg" alt="Image" width="600" height="400">
+        </div>
+        
+    </div>
+
+    <!--Creating another container with inline css which sets background color named as '#e1f5ed' and justify content to left-->
+    <div class="container" style="justify-content: left; background-color: #e1f5ed">
+        <div class="text">
+            <!--Creating a sub-heading named as 'Positive Impact of Technology' for the page-->
+            <h2>Positive Impact of Technology</h2>
+        </div>
+    </div>
+
+    <div class="container" style="background-color: #e1f5ed;" >
+        <div class="img">
+
+            <!--Inserting image to the container of the page where the sub-heading is 'Positive Impact of Technology'-->
+            <img src="Images/PT.png" alt="Image" width="600" height="400">
+        </div>
+
+        <div class="text">
+
+            <!--Writing content inside <p> tag for sub-heading 'Positive Impact of Technology'-->
+            <p>
+                Technology is enhancing day by day with many more features and it has many positive impact in human life.
+                It has permanently altered our everyday lives, the way we used to live, work, interact and 
+                communicate with others. It has transformed a number of fields like communication, education, 
+                healthcare and general society advancement.
+            </p>
+
+            <p>
+                The revolution in communication is one of the most significant positive effect of technology.
+                People all around the world are now connected because of the development of smartphones, laptops,
+                social media, email and so on. Because of technology now it is possible to do real-time communication
+                through messages. Even if people are very far from eachother, they can share their sarrow and happiness
+                with eachother.
+            </p>
+        </div>
+    </div>
+    
+    <div class="container" style="background-color: #e1f5ed;">
+        <div class="text">
+            <p>
+                Along with communication, the transformation in education is also one of the most significant impact of technology.
+                Students can get various knowledge as plenty of materials are available online such as digital textbooks, educational
+                apps, online courses and many more. They can do reaearch and gain knowledge based on their interest in any field.
+                Most importantly, the emergence of e-learning platforms has removed traditional barriers to education by allowing
+                people to learn at their own pace.
+            </p>
+
+            <p>
+                Technology has become a key factor in advancement, affecting everything from healthcare to the workplace and 
+                how people communicate and learn.
+            </p>
+        </div>
+    </div>
+
+    <!--Creating another container with inline css which sets background color named as '#e1e5ed'-->
+    <div class="container" style="background-color: #e1e5ed">
+        <div class="text">
+            <!--Creating a sub-heading named as 'Negative Impact of Technology'-->
+            <h2>Negative Impact of Technology</h2>
+
+            <!--Writing content inside <p> tag for sub-heading 'Negative Impact of Technology'-->
+            <p>
+                Although we can not deny that technology has brought many positive changes,
+                it is necssary to acknowledge that along with positive impact its rapid growth 
+                has also introduced some negative impact on human life.
+            </p>
+
+            <p>
+                As we all know, technology has brought too many social platforms through which 
+                humans can digitally communicate with eachother and due to this there is less 
+                in-person interaction between people. People might communicate virtually more 
+                often than communicating personally which may result in feelings of loneliness 
+                and decrease in the quality of interactions between people.  
+            </p>
+
+            <p>
+                Also, the rapid growth of online platforms by technology has opened new path for 
+                cybercrime and cyberbullying. As a result, especially those who are young may 
+                significantly suffer from psychological health. Along with this, prolonged usage
+                of digital platform for work or for entertainment may cause eye strain, sleep 
+                disruption and higher risk of mental health disorders including anxiety and 
+                depression.
+            </p>
+
+            <p>
+                There is no denying that technology has greatly enhanced many aspects of our life
+                but it is important to acknowledge and deal with the negative impacts as well.
+            </p>
+        </div>
+    </div>
+
+
+    <!--Creating another container with inline css which sets background color named as '#d5d7db' and  justify the content to left-->
+    <div class="container" style="justify-content: left; background-color: #d5d7db">
+        <div class="text">
+            <!--Creating a sub-heading named as 'Impact of Technology in Daily Life and on Business/Printing Business'-->
+            <h2>Impact of Technology on Daily Life and on Business/Printing Business</h2>
+        </div>
+    </div>
+
+    <div class="container" style="background-color: #d5d7db">
+        <div class="slider" id="imgs">
+
+            <!--Using image as a link to Product page-->
+            <a id="anc" href="../Product-Page/product.html">
+                <!--Inserting image to the container of the page where the sub-heading is 'Impact of Technology in Daily Life and on Business/Printing Business'-->
+                <img src="Images/P1.jpg" alt="Image" >
+            </a> 
+        </div>
+
+        <div class="text">
+            <!--Writing content inside <p> tag for sub-heading 'Impact of Technology on Daily Life and on Business/Printing Business'-->
+            <p>
+                Technology has great impact in human life affecting a various aspects of daily Life
+                such as communication, education, employment, healthcare, entertainment and so on. 
+                Along with this, it has a significant and wide-ranging impact on printing business
+                changing various aspects of business. Technology introduced digital printing and
+                revolutionized the printing business.
+            </p>
+
+            <p>
+                Digital printing process has many more advantage than the traditional one. Such as
+                digital printing is cost-effective, high-quality printing, faster, eco-friendly and so on.
+                The printing process has become more faster and more efficient since the introduction
+                of digital printing. High quality toners and liquid inks are used by digital press to produce
+                clear images and better designs. It consumes less energy, produces less waste which results in 
+                decrease of carbon footprint so, siginificantly it is more eco-friendly and sustainable.
+            </p>
+
+            <p>
+                Hence, technology has had an innovative impact on the printing sector resulting the better
+                sustainability and efficiency of printers. 
+            </p>
+        </div>
+    </div>
+
+
+    <!--Creating a container with inline css which sets backgroung color nameda as '#c8c8c9' and justify the content to the left-->
+    <div class="container" style="justify-content: left; background-color: #c8c8c9">
+        <div class="text">
+            
+            <!--Creating a sub-heading named as 'Conclusion'-->
+            <h2>Conclusion</h2>
+            <!--Writing content inside <p> tag for sub-heading 'Conclusion'-->
+            <p>
+                In conclusion, we can say that technoloy has dynamic impact in human life in every sector.
+                It is constantly evolving human life and creating a foundation for future which will be even more
+                inventive and creative. But, along with the advancement of technology it may bring some drawbacks
+                so it is necessary to recognized and deal with it and also we need to be prepared for the upcoming
+                one. 
+            </p>
+        </div>
+    </div>
+
+
+    <!--Creating an image slider-->
+    <script>
+        
+        //Array of images
+        var images = ['Images/P1.jpg', 'Images/P2.jpg', 'Images/P3.jpg', 'Images/P4.jpg', 'Images/P5.png'];
+
+        //Initialize a variable to keep track of current image
+        var x = 0;
+
+        //Get the html element by id 'imgs'
+        var image = document.getElementById('imgs');
+        var anchor =document.getElementById('anc');
+
+        //Timer is set such that image changes in every 3 second.
+        setInterval(slider, 3000); 
+
+        //function to change the displayed image
+        function slider() {
+            if (x < images.length){
+                x = x + 1;
+            }
+            else {
+                x = 1;
+            }
+
+            image.getElementsByTagName('img')[0].src = images[x - 1];
+            anchor.href = '../Product-Page/product.html';
+        }
+        
+    </script>
+
+
+</body>
+</html>

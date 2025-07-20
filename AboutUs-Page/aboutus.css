@@ -1,0 +1,67 @@
+.card {
+    box-shadow: black;
+    width: 310px;
+    background-color: white;
+    height: 800px;
+    text-align: center;
+    border: 2px solid black;
+    border-radius: 8px;
+  }
+  
+  .flex-container{
+      display: flex;
+      justify-content: space-between;
+      
+      padding: 5px;
+    }
+  button {
+    border: none;
+    outline: 0;
+    display: inline-block;
+    padding: 8px;
+    color: white;
+    background-color: #000;
+    cursor: pointer;
+    width: 90%;
+    font-size: 18px;
+    margin-top: 150px;
+  }
+  
+  .float-navigation {
+    background-color: #333;
+    color: white;
+    height: 6%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    position: absolute;
+    display: flex; 
+    align-items: center; 
+}
+
+.float-navigation a {
+    color: white;
+    text-decoration: none;
+    padding: 1% 2%;
+    font-family: monospace;
+    font-size: 1.1vw;
+    display: inline-block;
+    transition: transform 0.1s ease-out;
+    }
+    .searchbar{
+   float:right;
+   margin-left: auto; 
+    }
+    .float-navigation a:hover {
+    transform: scale(1.25);
+    }
+
+.contact{
+    width:100%;
+    transition: ease-out 0.5s;
+    margin-top:33%;
+}
+.contact:hover{
+    transform: scale(1.08);
+    border:3px solid whitesmoke
+}

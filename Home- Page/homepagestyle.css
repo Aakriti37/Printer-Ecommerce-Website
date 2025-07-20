@@ -1,0 +1,155 @@
+/* css for anchor tag used in button tag */
+button a{
+    text-decoration: none;
+    color:whitesmoke;
+    transition: ease-out 0.5s ;
+    }
+    
+    /* css for anchor tag used in nav bar */
+    nav a{
+    text-decoration: none;
+    color:whitesmoke;
+    transition: ease-out 0.5s ;
+    }
+    
+    /* css for all the anchor tags */
+    a:hover{
+    color:black;
+    }
+    
+    a{
+    text-decoration: none;
+    color: black;
+    }
+    
+    /* css for all the table tags */
+    table{
+    height: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    }
+    
+    /* class made for the logo which defines its size and alignment */
+    .logo{
+    display: block;
+    width: 70px;
+    margin-left: auto;
+    margin-right: auto;
+    }
+    
+    /* class used to set background colour of the table its height and opacity */
+    .table{
+    background-color: grey;
+    opacity:0.5;
+    height: 50px;
+    }
+    
+    /* class for the center text */
+    .quote{
+    text-align: center;
+    font-family:cursive;
+    font-style: italic;
+    font-style: bold;
+    color: whitesmoke;
+    font-size: 100px;
+    margin-top:10%;
+    padding:2px;
+    margin-bottom:1px;
+    }
+    
+    /* class for the center text */
+    .quote2{
+    text-align: center;
+    font-family:cursive;
+    color: whitesmoke;
+    font-size: 55px;
+    font-style: italic;
+    font-style: bold;
+    margin-top:1px
+    }
+    
+    .text2{
+    font-family:system-ui;
+    font-size: 25px;
+    }
+    
+    
+    .product{
+    background-color: white;
+    padding: 15px;
+    }
+    
+    .text3{
+    font-family:system-ui;
+    }
+    
+    .product2{
+    background-color: white;
+    padding: 15px;
+    padding-bottom: 15px;
+    }
+    
+    .product3{
+    background-color: white;
+    padding: 15px;
+    padding-bottom: 15px;
+    }
+    
+    /* css used for the "go to product page" */
+    .productbutton {
+    border: none;
+    padding: 12px;
+    color: whitesmoke;
+    background-color:grey;
+    cursor: pointer;
+    margin-left: 40%;
+    padding-left: 35px;
+    padding-right: 35px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-family:system-ui;
+    font-size: 25px;
+    margin-top: 5%;
+    }
+    
+    .productbox{
+    transition: ease-out 0.5s;
+    }
+    
+    .productbox:hover{
+    transform: scale(1.03);
+    }
+    
+    .pop{
+    padding-left: 35px;
+    border-style: solid;
+    padding-right:35px;
+    padding-top :5px;
+    padding-bottom:5px;
+    background-color: gray;
+    color: whitesmoke;
+    border-color: gray;
+    margin-top: 370px;
+    margin-left: 10px;
+    font-family:system-ui;
+    font-size: 25px;
+    }
+    
+    .foot{
+    font-family: system-ui;
+    margin-top: 100px;
+    background-color: white;
+    }
+    
+    /* css for footer */
+    footer{
+    
+    height:50px;
+    font-size: 20px;
+    margin-top: 5%;
+    padding-top: 3%;
+    padding-bottom: 30%;;
+    padding-left:8%;
+    padding-right:8%;
+    background-color: white;
+    }

@@ -1,0 +1,102 @@
+/* This property of css is only applied to 'float-navigation' class which sets a background 
+color named as '#333', text color to white for the navigation bar with height '6%' and 
+width '100%' positioned at the top-left corner of the view-port with absolute position. 
+Uses flexbox to horizontally align content with 'display: flex;' and contents are align
+center inside the navigation bar.
+*/
+
+.float-navigation {
+    background-color: #333;
+    color: white;
+    height: 6%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    position: absolute;
+    display: flex; 
+    align-items: center; 
+}
+
+
+/* This property of css is applied to 'float-navigation' class of anchor link which sets text color
+of anchor link to white, text-decoration is set to none to remove the underline from anchor link 
+with padding of 1% vertically and 2% horizontally. The font-family of anchor link is set to 
+'monospace' with font-size '1.1vw' and anchor links are displayed as inline-block with transition
+effect over 0.1 seconds with ease-out timing.
+*/
+
+.float-navigation a {
+    color: white;
+    text-decoration: none;
+    padding: 1% 2%;
+    font-family: monospace;
+    font-size: 1.1vw;
+    display: inline-block;
+    transition: transform 0.1s ease-out;
+}
+
+
+/* This property of css is applied to 'searchbar' class which floats the 
+search bar to the right with margin-left as auto within the navigation bar. */
+
+.searchbar{
+    float:right;
+    margin-left: auto; 
+}
+
+
+/* This property of css is applied to 'float-navigation' class of anchor tag to
+generates a visual effect when the user hover over the anchor links. The scale(1.25)
+enlarges the anchor links by 1.25 factor using transform property.
+*/
+
+.float-navigation a:hover {
+    transform: scale(1.25);
+}
+
+/* This property of css is applied to 'header' class to styles the Header/Blog Title */
+.header {
+    padding: 10px;
+    font-size: 35px;
+    text-align: center;
+    background: rgb(240, 236, 236);
+}
+
+
+/* This property of css is applied to 'container' class where flexbox is used to horizontally
+align the content, sets the background-color named as '#fef7da' with padding of 10 pixels and
+justify the content tto center.
+*/
+
+.container {
+    display: flex;
+    background-color: #fef7da;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+/* This property of css sets the maximum width and maximum height of image to 100% */
+img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+
+/* This property of css is applied to 'text' class where font-size is set to 20 pixels
+and 20 pixels of padding is added around the content with flex 10. 
+*/
+.text {
+    font-size: 20px;
+    padding: 20px;
+    flex: 10;
+}
+
+.slider {
+    width: 500px;
+    height: 500px;
+    margin: 20px auto;
+    box-sizing: border-box;
+    overflow: hidden;
+    box-shadow: 5px 5px 10px grey;
+}

@@ -1,0 +1,43 @@
+*{
+    overflow-x: hidden;
+}
+.float-navigation {
+    background-color: #333;
+    color: white;
+    height: 6%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    position: absolute;
+    display: flex; 
+    align-items: center; 
+}
+
+.float-navigation a {
+    color: white;
+    text-decoration: none;
+    padding: 1% 2%;
+    font-family: monospace;
+    font-size: 1.1vw;
+    display: inline-block;
+    transition: transform 0.1s ease-out;
+}
+
+.searchbar{
+   float:right;
+   margin-left: auto; 
+}
+.float-navigation a:hover {
+    transform: scale(1.25);
+}
+
+
+.research{
+    margin-top: 50px;
+    text-align: center;
+    font-size: 40px;
+}
+.t1{
+    padding-top: 30px;
+    width: 100%;
+}

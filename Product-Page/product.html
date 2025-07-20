@@ -1,0 +1,231 @@
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet" href="productstyle.css">
+    </head>
+    <style>
+        .slider {
+            width: 90%;
+            height: 65%;
+            margin: 0px auto;
+            max-width: 350px;
+            box-shadow: 5px 5px 10px grey; /* for x,y, and z-axis that's why three dimensions are used */
+            background-color: white;     
+            margin-top:2%;
+            overflow:hidden;
+            border:2px solid black;
+            border-radius: 8px;
+         }
+        div > img{ /* To tell the computer to go inside the div container and put some attributes to the image */
+            height:100%;
+            width:100%;
+            object-fit:cover;
+         }
+        header{
+            background-color: #333;
+            color: white;
+            padding-top: 20px;
+            padding-bottom: 10px;
+            height: 30px;
+            }
+        .filter-box {
+            border: 2px solid black;
+            padding: 20px;
+            border-radius: 8px;
+            background-color: #E1E5ED;
+            box-shadow: azure;
+            width:40%;
+            margin-top: 2%;
+        }
+        </style>
+    <body style="background-color:#e9e7e7;margin:0;">
+        <nav class="float-navigation"> <!-- A class to define the navigation bar-->
+            
+                <a href="../Home- Page/home.html">Home</a>
+                <a href="../Product-Page/product.html">Product </a>
+                <a href="../Blog-Page/blog.html">Blog  </a>
+                <a href="../AboutUs-Page/aboutus.html"> About Us</a>
+                <a href="../Research-Page/research.html">Research </a>
+                
+                    <div class="searchbar"> <!-- A class to define the  bar-->
+                    <input style="width:300px; border-radius: 7px; height:25px;"type="text" placeholder="Search🔎"> 
+                     </div>
+                     <a href="../Home- Page/home.html"> <img src="Images/Logo.png" style="height:5%;width:50%;"></a>
+        </nav>
+        
+        <div style=" position: relative;overflow: hidden;margin-top: 3.5%;"> <!-- Position is defined so that the backgroudn respects the text and the text is made fixed -->
+            <img style=" width: 100%;border: 2px solid black; box-shadow: #333;" src="Images/background-img.png">
+            <div class="quote-text">Ink , Paper , Perfection</div>
+            <div class="quote-text1">Crafting Yours Ideas Into Exquisite Reality. </div>
+        </div>
+        <button onclick="toggleFilterBox()" class="togglebutton">Toggle Filter Box</button> <!-- A interactive javascript element that removes the filter box-->
+        
+    <section >
+        <div class="row">
+            <div class="filter-box" id="filterBox">
+                <h3 style="font-family: Courier New; font-size: x-large;">Filter Options:</h3>
+                <section>
+                    <form>
+                        <!--  Different filters are defined for proper selection -->
+                        <label style="font-family: monospace; font-size: larger;">Price Range:</label>
+                        0 <input type="range" id="priceRange" min="0" max="50000" step="1000" value="50000">30000<br> <!-- A price range is drawn between 0 and 30000-->
+            
+                        <label style="font-family: monospace; font-size: larger;">Printer Size:</label><br>
+                        <div style="display: flex; gap: 10px; padding: 7px; font-family: monospace; font-size: larger;">
+                            <input type="checkbox" id="Small" value="small"> Small
+                            <input type="checkbox" id="Medium" value="medium"> Medium
+                            <input type="checkbox" id="Large" value="large"> Large
+                        </div>
+            
+                        <label style="font-family: monospace; font-size: larger;">Brand:</label>
+                        <div style="display: flex; gap: 10px; padding: 7px; font-family: monospace; font-size:large;">
+                            <input type="checkbox" id="Canon" value="Canon"> Canon
+                            <input type="checkbox" id="Brother" value="Brother"> Brother
+                            <input type="checkbox" id="SSME" value="SSME"> SSME
+                        </div>
+
+                        <label style="font-family: monospace; font-size: larger;">Funtion:</label>
+                        <div style="display: flex; gap: 5px; padding: 7px; font-family: monospace; font-size:large;"> <!-- Gap is made smaller to accodomate all the elements-->
+                            <input type="checkbox"> Print Only
+                            <input type="checkbox"> 3-in-1
+                            <input type="checkbox" > 4-in-1
+                        </div>
+
+                        <label style="font-family: monospace; font-size: larger;">Format:</label>
+                        <div style="display: flex; gap: 5px; padding: 7px; font-family: monospace; font-size:large;">
+                            <input type="checkbox" > A4 Monochrome
+                            <input type="checkbox" > A3 Color
+                            <input type="checkbox"> A4
+                        </div>
+        
+                        <label style="font-family: monospace; font-size: larger;">Print Speed:</label>
+                        0 <input type="range" id="printSpeedRange" min="0" max="100" step="1" value="50">1200 <br>
+        
+                        <label style="font-family: monospace; font-size: larger;">Color Printing:</label>
+                        <input type="checkbox" value="color"><br>
+            
+                        <label style="font-family: monospace; font-size: larger;">Wireless Connectivity:</label>
+                        <input type="checkbox" value="wireless"><br>
+            
+                    </form>
+                 </section>
+            </div>
+            
+            <div class="productbox"> 
+
+                <img src="Images/A.png" style="width:300px;height:200px;box-shadow:5px 5px 10px grey"> <!-- A width and height of image is defined to fit the box-->
+                <h1 style="font-family:helvetica;"> Canon PIXMA-D20 </h1>
+                <text style="color:#368f0d;font-size:20px;"> Rs.19,999</text>
+                <p style="font-family:Cambria;text-align: center;padding:2px;"> This printer has 3 in 1 features which includes printing,scanning and copying. Guranteed 4000 pages yield with color</p>
+                <button class="productbutton"> Add to Cart </button>
+
+            </div>
+            <div class="productbox"> 
+
+                <img src="Images/B.png" style="width:300px;height:200px;box-shadow:5px 5px 10px grey">
+                <h1 style="font-family:helvetica;"> Brother-DCP-310 </h1>
+                <text style="color:#368f0d;font-size:20px;"><s >Rs.35,000</s> Rs.27,000(32%)</text> <!-- <s> tag is defined to give the effect of discount -->
+                <p style="font-family:Cambria;text-align: center;padding:2px;"> Print, Scan & Copy: Low cost quality printing with Ultra-high 6500 page yield (black ink) / 5000 page yield. </p>
+                <button class="productbutton"> Add to Cart </button>
+
+            </div>
+            <div class="productbox"> 
+
+                <img src="Images/C.png" style="width:300px;height:200px;box-shadow:5px 5px 10px grey">
+                <h1 style="font-family:helvetica;"> Brother-TCT-90 </h1>
+                <text style="color:#368f0d;font-size:20px;"> Rs.24,999</text>
+                <p style="font-family:Cambria;text-align: center;padding:2px;">  Professionally Designed for Fast Print Speeds, Low Cost High Resolution Photo Quality with Ultra High Yield Ink Bottles</p>
+                <button class="productbutton"> Add to Cart </button>
+
+            </div>
+            <div class="productbox"> 
+
+                <img src="Images/E.png" style="width:300px;height:200px;box-shadow:5px 5px 10px grey">
+                <h1 style="font-family:helvetica;"> SSME Ultimate 32T </h1>
+                <text style="color:#368f0d;font-size:20px;"><s>Rs.31,000</s> Rs 24,000(25%)</text>
+                <p style="font-family:Cambria;text-align: center;padding:2px;"> Mono Laser Multi-Function with Wi-Fi and Automatic Duplex feature. Up to 34 pages per minute. Low cost printing per page.</p>
+                <button class="productbutton"> Add to Cart </button>
+
+            </div>
+        </div>
+    </section>  
+            
+    <div class="row1">
+            <div class="productbox1"> 
+
+                <img src="Images/F.png" style="width:276px;height:200px;box-shadow:5px 5px 10px grey">
+                <h2 style="font-family:helvetica;"> PIXA 2234 </h1>
+                <text style="color:#368f0d;font-size:20px;"> Rs.15000</text>
+                <p style="font-family:Cambria;text-align: center;padding:10px;"> PIXA-2234 is a high-speed, high-quality printer for photos and more, making it a great fit for any task: work, study and creativity. </p>
+                <button class="productbutton"> Add to Cart </button>
+            
+            </div>
+            <div class="productbox1"> 
+
+                <img src="Images/G.png" style="width:276px;height:200px;box-shadow:5px 5px 10px grey">
+                <h2 style="font-family:helvetica;"> Brother 52T </h1>
+                <text style="color:#368f0d;font-size:20px;"><s>Rs.20000</s> Rs.13999(30%)</text>
+                <p style="font-family:Cambria;text-align: center;padding:10px;"> A fast, cost-efficient 4-in-1 everyday printer with refillable ink, ideal for productive students, families and home users.</p>
+                <button class="productbutton"> Add to Cart </button>
+
+            </div>
+            <div class=" productbox1"> 
+
+                <img src="Images/H.png" style="width:276px;height:200px;box-shadow:5px 5px 10px grey">
+                <h2 style="font-family:helvetica;"> Canon Viper-61 </h1>
+                <text style="color:#368f0d;font-size:20px;"><s> Rs.20000 </s> Rs.14000(30%)</text>
+                <p style="font-family:Cambria;text-align: center;padding:10px;"> This desk-friendly, compact laser printer with an up to 250-sheet capacity tray prints crisp black and white documents. </p>
+                <button class="productbutton"> Add to Cart </button>
+
+            </div>
+            <div class=" productbox1"> 
+
+                <img src="Images/I.png" style="width:276px;height:200px;box-shadow:5px 5px 10px grey">
+                <h2 style="font-family:helvetica;"> SSME Lazer Series  </h1>
+                <text style="color:#368f0d;font-size:20px;"> Rs.22000</text>
+                <p style="font-family:Cambria;text-align: center;padding:10px;"> Feature-packed 4-in-1 printer ideal for businesses that need cost-effective, high speed printing along with 600-sheet paper capacity. </p>
+                <button class="productbutton"> Add to Cart </button>
+
+            </div>
+            
+            
+            <div class="card">
+                <div class="slider">
+                     <div id="img"> <!-- A division is defined for each part to properly align each items and to ensure proper functioning of image slider -->
+                        <img src="Images/A.png">
+                    </div>
+                </div>
+            <p style="font-family: Arial; font-size: 14px; color: #555; text-align: center; margin-top: 30px;">
+                All images above are subjected to copyright. Please contact the team for permission to use them. Any sort of unauthorized access is not allowed.
+             </p>
+             
+            </div>
+    </div>
+    
+    <footer style="background-color:#333;color: white;padding:20px;text-align: center;"> <!-- A footer is defined to provide copyright-->
+        <p>&copy; 2024 Sansraya Pradhanang <br> All rights reserved.  <a href="aboutus.html"> Contact Us</a></p> 
+    </footer>
+
+    
+    <script src="productjs.js"></script> <!-- To link external javascript code-->
+            <script> 
+            // A javascript code to show image slider 
+                var images=["Images/A.png","Images/C.png","Images/D.png","Images/G.png","Images/I.png"] // An array of images 
+                var x=0;
+                var imgs=document.getElementById('img');
+                setInterval(slider,3000); // In-built java script function to trigger function every 3 seconds 
+                function slider(){
+                    if(x<images.length){
+                        x=x+1;
+                    }
+                    else{
+                    x=1;
+                    }
+                    imgs.innerHTML="<img src="+images[x-1]+">"  // To edit the inner content and change the image 
+                } 
+            </script>
+    </body>
+    </html>
